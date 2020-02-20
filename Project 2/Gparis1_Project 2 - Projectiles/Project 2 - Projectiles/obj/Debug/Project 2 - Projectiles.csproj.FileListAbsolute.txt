@@ -1,0 +1,19 @@
+C:\Users\smacnaughton\Documents\Game Development\1233 Projects\C# Projects\Project 2 - Projectiles\Project 2 - Projectiles\bin\Debug\Project 2 - Projectiles.exe.config
+C:\Users\smacnaughton\Documents\Game Development\1233 Projects\C# Projects\Project 2 - Projectiles\Project 2 - Projectiles\bin\Debug\Project 2 - Projectiles.exe
+C:\Users\smacnaughton\Documents\Game Development\1233 Projects\C# Projects\Project 2 - Projectiles\Project 2 - Projectiles\bin\Debug\Project 2 - Projectiles.pdb
+C:\Users\smacnaughton\Documents\Game Development\1233 Projects\C# Projects\Project 2 - Projectiles\Project 2 - Projectiles\obj\Debug\Project 2 - Projectiles.csprojResolveAssemblyReference.cache
+C:\Users\smacnaughton\Documents\Game Development\1233 Projects\C# Projects\Project 2 - Projectiles\Project 2 - Projectiles\obj\Debug\Project_2___Projectiles.Form1.resources
+C:\Users\smacnaughton\Documents\Game Development\1233 Projects\C# Projects\Project 2 - Projectiles\Project 2 - Projectiles\obj\Debug\Project_2___Projectiles.Properties.Resources.resources
+C:\Users\smacnaughton\Documents\Game Development\1233 Projects\C# Projects\Project 2 - Projectiles\Project 2 - Projectiles\obj\Debug\Project 2 - Projectiles.csproj.GenerateResource.Cache
+C:\Users\smacnaughton\Documents\Game Development\1233 Projects\C# Projects\Project 2 - Projectiles\Project 2 - Projectiles\obj\Debug\Project 2 - Projectiles.exe
+C:\Users\smacnaughton\Documents\Game Development\1233 Projects\C# Projects\Project 2 - Projectiles\Project 2 - Projectiles\obj\Debug\Project 2 - Projectiles.pdb
+C:\Users\smacnaughton\Documents\Game Development\1233 Projects\C# Projects\Skeleton\Project 2\Project 2 Posting\Project 2 - Projectiles\Project 2 - Projectiles\bin\Debug\Project 2 - Projectiles.exe.config
+C:\Users\smacnaughton\Documents\Game Development\1233 Projects\C# Projects\Skeleton\Project 2\Project 2 Posting\Project 2 - Projectiles\Project 2 - Projectiles\bin\Debug\Project 2 - Projectiles.exe
+C:\Users\smacnaughton\Documents\Game Development\1233 Projects\C# Projects\Skeleton\Project 2\Project 2 Posting\Project 2 - Projectiles\Project 2 - Projectiles\bin\Debug\Project 2 - Projectiles.pdb
+C:\Users\smacnaughton\Documents\Game Development\1233 Projects\C# Projects\Skeleton\Project 2\Project 2 Posting\Project 2 - Projectiles\Project 2 - Projectiles\obj\Debug\Project 2 - Projectiles.csprojResolveAssemblyReference.cache
+C:\Users\smacnaughton\Documents\Game Development\1233 Projects\C# Projects\Skeleton\Project 2\Project 2 Posting\Project 2 - Projectiles\Project 2 - Projectiles\obj\Debug\Project_2___Projectiles.Form1.resources
+C:\Users\smacnaughton\Documents\Game Development\1233 Projects\C# Projects\Skeleton\Project 2\Project 2 Posting\Project 2 - Projectiles\Project 2 - Projectiles\obj\Debug\Project_2___Projectiles.Properties.Resources.resources
+C:\Users\smacnaughton\Documents\Game Development\1233 Projects\C# Projects\Skeleton\Project 2\Project 2 Posting\Project 2 - Projectiles\Project 2 - Projectiles\obj\Debug\Project 2 - Projectiles.csproj.GenerateResource.Cache
+C:\Users\smacnaughton\Documents\Game Development\1233 Projects\C# Projects\Skeleton\Project 2\Project 2 Posting\Project 2 - Projectiles\Project 2 - Projectiles\obj\Debug\Project 2 - Projectiles.csproj.CoreCompileInputs.cache
+C:\Users\smacnaughton\Documents\Game Development\1233 Projects\C# Projects\Skeleton\Project 2\Project 2 Posting\Project 2 - Projectiles\Project 2 - Projectiles\obj\Debug\Project 2 - Projectiles.exe
+C:\Users\smacnaughton\Documents\Game Development\1233 Projects\C# Projects\Skeleton\Project 2\Project 2 Posting\Project 2 - Projectiles\Project 2 - Projectiles\obj\Debug\Project 2 - Projectiles.pdb
