@@ -13,6 +13,8 @@
 ///
 /// 02/20/2020-------------------------------------------------------------------------------------------------------->
 /// +Wrote project header
+/// 02/22/2020-------------------------------------------------------------------------------------------------------->
+/// 
 
 using System;
 using System.Collections.Generic;
@@ -33,9 +35,15 @@ namespace Project_2___Projectiles
             InitializeComponent();
         }
 
-      // Your Code Here
-
-
+        // Your Code Here
+        double pxConvert;   // Equation for converting real world values to px values
+        double vx, vy;  // Initial velocity
+        double a;       // Acceleration
+        double x, y;    // Distance traveled
+        int px, py;  // Distance traveled (pixels)
+        double timeInSeconds;
+        double timeElapsed; // Total time passed
+        int initialHeight;  // Height the ball starts at
 
         private int ReadInput(TextBox a, ref double input)
         {
@@ -52,13 +60,33 @@ namespace Project_2___Projectiles
 
         private void Fire_Click(object sender, EventArgs e)
         {
-            // Your Code Here
+            double velocity = 0;
+            double angle = 0;
+            initialHeight = pnlDraw.Height - pnlSample.Height;
+
+            if(ReadInput(txtSpeed, ref velocity) == 0 && ReadInput(txtAngle, ref angle) == 0 && ReadInput(txtDtoWall, ref x) == 0)   // Numbers were read successfuly
+            {
+                vx = velocity * Math.Cos((angle * (Math.PI / 180)));
+                vy = velocity * Math.Sin((angle * 180 / Math.PI));
+                a = -9.8;   // Standard Earth gravity
+                pxConvert = pnlDraw.Width / x;
+
+                timeInSeconds = clock.Interval / 10000.0f;
+                timeElapsed = 0;
+                clock.Enabled = true;
+            }
 
         }
 
         private void clock_Tick(object sender, EventArgs e)
         {
-            // Your Code Here
+            x = vx * timeElapsed;
+            y = vy * timeElapsed + (0.5 * a * Math.Pow(timeElapsed, 2));
+            px = Convert.ToInt32(x * pxConvert);
+            py = Convert.ToInt32(initialHeight - (y * pxConvert));
+
+            pnlSample.Location = new Point(px, py);
+            timeElapsed += timeInSeconds;
         }
 
         private void Clear_Click(object sender, EventArgs e)
