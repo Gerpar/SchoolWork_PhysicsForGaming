@@ -12,9 +12,15 @@
 ///Progress:
 ///
 /// 02/20/2020-------------------------------------------------------------------------------------------------------->
-/// +Wrote project header
+/// + Wrote project header
 /// 02/22/2020-------------------------------------------------------------------------------------------------------->
-/// 
+/// + Created base functionality for button click (Launching ball)
+/// ! Ball travels too slowly, will find fix later
+/// 02/23/2020-------------------------------------------------------------------------------------------------------->
+/// + Fixed bug with ball traveling too slowly (interval was using 10000 instead of 1000)
+/// + Wrote "collision" checks with the wall and ground
+/// + Made splats allign correctly with their new centre
+/// + 
 
 using System;
 using System.Collections.Generic;
@@ -41,7 +47,7 @@ namespace Project_2___Projectiles
         double a;       // Acceleration
         double x, y;    // Distance traveled
         int px, py;  // Distance traveled (pixels)
-        double timeInSeconds;
+        double timeInSeconds;   // Value for seconds per clock tick
         double timeElapsed; // Total time passed
         int initialHeight;  // Height the ball starts at
 
@@ -67,11 +73,11 @@ namespace Project_2___Projectiles
             if(ReadInput(txtSpeed, ref velocity) == 0 && ReadInput(txtAngle, ref angle) == 0 && ReadInput(txtDtoWall, ref x) == 0)   // Numbers were read successfuly
             {
                 vx = velocity * Math.Cos((angle * (Math.PI / 180)));
-                vy = velocity * Math.Sin((angle * 180 / Math.PI));
+                vy = velocity * Math.Sin((angle * (Math.PI / 180)));
                 a = -9.8;   // Standard Earth gravity
-                pxConvert = pnlDraw.Width / x;
+                pxConvert = pnlDraw.Width / x;  // Value that converts real world to pixel values
 
-                timeInSeconds = clock.Interval / 10000.0f;
+                timeInSeconds = clock.Interval / 1000.0f;
                 timeElapsed = 0;
                 clock.Enabled = true;
             }
@@ -86,12 +92,50 @@ namespace Project_2___Projectiles
             py = Convert.ToInt32(initialHeight - (y * pxConvert));
 
             pnlSample.Location = new Point(px, py);
-            timeElapsed += timeInSeconds;
+
+            if(px > pnlDraw.Width - pnlSample.Width)    // Ball hit the wall
+            {
+                pnlSample.Visible = false;
+                pnlSplat.Location = new Point(pnlDraw.Width - pnlSample.Width + (pnlSplat.Width / 2), py + (pnlSample.Height - pnlSplat.Height));
+                pnlSplat.Visible = true;
+
+                lblResults.Text = "The ball hit the wall " + Convert.ToString(Math.Round(y, 2)) + " Meters up the wall.";
+
+                clock.Enabled = false;
+                Clear.Enabled = true;
+            }
+            else if(y <= 0 && timeElapsed > 0)  // Ball hit the ground (After leaving)
+            {
+                pnlSample.Visible = false;
+                pnlGround.Location = new Point(px + (pnlSample.Width - pnlGround.Width), pnlDraw.Height - pnlGround.Height);
+                pnlGround.Visible = true;
+
+                lblResults.Text = "The ball traveled " + Convert.ToString(Math.Round(x,2)) + " meters before hitting the ground.";
+
+                clock.Enabled = false;
+                Clear.Enabled = true;
+            }
+            else    // Ball is still in the air
+            {
+                timeElapsed += timeInSeconds;
+            }
         }
 
         private void Clear_Click(object sender, EventArgs e)
         {
-            // Your Code Here
+            lblResults.Text = "";
+            txtAngle.Clear();
+            txtDtoWall.Clear();
+            txtSpeed.Clear();
+
+            pnlSample.Location = new Point(0, initialHeight);
+
+            pnlSample.Visible = true;
+            pnlSplat.Visible = false;
+            pnlGround.Visible = false;
+
+            Fire.Enabled = true;
+            Clear.Enabled = false;
         }
 
     }

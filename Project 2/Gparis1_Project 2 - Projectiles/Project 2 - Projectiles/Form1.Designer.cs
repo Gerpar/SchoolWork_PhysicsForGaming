@@ -168,7 +168,7 @@
             // 
             // clock
             // 
-            this.clock.Interval = 30;
+            this.clock.Interval = 20;
             this.clock.Tick += new System.EventHandler(this.clock_Tick);
             // 
             // lblResults
