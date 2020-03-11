@@ -63,6 +63,7 @@
             this.txtWeight = new System.Windows.Forms.TextBox();
             this.txtTime = new System.Windows.Forms.TextBox();
             this.lblPanel = new System.Windows.Forms.Label();
+            this.lblPoundsPolar = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // pnlDrawing
@@ -398,12 +399,22 @@
             this.lblPanel.TabIndex = 67;
             this.lblPanel.Text = resources.GetString("lblPanel.Text");
             // 
+            // lblPoundsPolar
+            // 
+            this.lblPoundsPolar.AutoSize = true;
+            this.lblPoundsPolar.ForeColor = System.Drawing.Color.Green;
+            this.lblPoundsPolar.Location = new System.Drawing.Point(983, 207);
+            this.lblPoundsPolar.Name = "lblPoundsPolar";
+            this.lblPoundsPolar.Size = new System.Drawing.Size(0, 13);
+            this.lblPoundsPolar.TabIndex = 68;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(1147, 780);
+            this.Controls.Add(this.lblPoundsPolar);
             this.Controls.Add(this.lblPanel);
             this.Controls.Add(this.lblW);
             this.Controls.Add(this.button1);
@@ -481,6 +492,7 @@
         private System.Windows.Forms.TextBox txtWeight;
         private System.Windows.Forms.TextBox txtTime;
         private System.Windows.Forms.Label lblPanel;
+        private System.Windows.Forms.Label lblPoundsPolar;
     }
 }
 

@@ -25,6 +25,7 @@ namespace Project_3___Forces
         System.Drawing.Color[] colour = new System.Drawing.Color[6] {Color.Green, Color.Blue, Color.Red, Color.Indigo, Color.Brown, Color.Black};
         double weight = 0, angle = 0, secs = 0;
         bool clearing = false;
+        double parseOut;
 
         private double ConvertToDouble(String text, String errorMsg)
         {
@@ -47,56 +48,55 @@ namespace Project_3___Forces
 
         private void addToVectors(double force, double theta, int n)
         {
-            vectors[0, n] = force * Math.Cos(theta * Math.PI / 180.0);
-            vectors[1, n] = force * Math.Sin(theta * Math.PI / 180.0);
+            vectors[0, n] = force * Math.Cos(ConvertDegToRad(theta));
+            vectors[1, n] = force * Math.Sin(ConvertDegToRad(theta));
             used[n] = true;
         }
 
 
         private void txtWeight_TextChanged_1(object sender, EventArgs e)
         {
-            vectors[]
-            // Your Code Here
+            SetVals(0);
         }
 
         private void txtMag1_TextChanged_1(object sender, EventArgs e)
         {
-            // Your Code Here
+            SetVals(1);
         }
 
         private void txtDeg1_TextChanged_1(object sender, EventArgs e)
         {
-            // Your Code Here
+            SetVals(1);
         }
 
         private void txtMag2_TextChanged_1(object sender, EventArgs e)
         {
-            // Your Code Here
+            SetVals(2);
         }
 
         private void txtDeg2_TextChanged_1(object sender, EventArgs e)
         {
-            // Your Code Here
+            SetVals(2);
         }
 
         private void txtMag3_TextChanged_1(object sender, EventArgs e)
         {
-            // Your Code Here
+            SetVals(3);
         }
 
         private void txtDeg3_TextChanged_1(object sender, EventArgs e)
         {
-            // Your Code Here
+            SetVals(3);
         }
 
         private void txtMag4_TextChanged_1(object sender, EventArgs e)
         {
-            // Your Code Here
+            SetVals(4);
         }
 
         private void txtDeg4_TextChanged_1(object sender, EventArgs e)
         {
-            // Your Code Here
+            SetVals(4);
         }
 
         private void txtTime_TextChanged_1(object sender, EventArgs e)
@@ -169,6 +169,90 @@ namespace Project_3___Forces
             // Your Code Here
 
 
+        }
+
+        private void SetVals(int index)
+        {
+            switch(index)
+            {
+                case 0: // weight force
+                    if (double.TryParse(txtWeight.Text, out parseOut))    // Check if the value in the holder is a double
+                    {
+                        addToVectors(Convert.ToDouble(txtWeight.Text)/0.2248, 270, index); // Pass to function to store values in cartesian (converts lbs to neutons beforehand)
+                        SetVals(5); // set total vector
+                        lblPoundsPolar.Text = "(" + Convert.ToString(Math.Abs(Math.Round(vectors[1, 0]))) + "N @ 270 degrees)";
+                    }
+                    break;
+                case 1: // Force 1
+                    if (double.TryParse(txtMag1.Text, out parseOut))    // Check if the value in the holder is a double
+                    {
+                        if (double.TryParse(txtDeg1.Text, out parseOut))// Another check for if the value is a double
+                        {
+                            addToVectors(Convert.ToDouble(txtMag1.Text), Convert.ToDouble(txtDeg1.Text), index); // Pass to function to store values in cartesian
+                            SetVals(5); // set total vector
+                        }
+                    }
+                    break;
+                case 2: // force 2
+                    if (double.TryParse(txtMag2.Text, out parseOut))    // Check if the value in the holder is a double
+                    {
+                        if (double.TryParse(txtDeg2.Text, out parseOut))// Another check for if the value is a double
+                        {
+                            addToVectors(Convert.ToDouble(txtMag2.Text), Convert.ToDouble(txtDeg2.Text), index); // Pass to function to store values in cartesian
+                            SetVals(5); // set total vector
+                        }
+                    }
+                    break;
+                case 3: // force 3
+                    if (double.TryParse(txtMag3.Text, out parseOut))    // Check if the value in the holder is a double
+                    {
+                        if (double.TryParse(txtDeg3.Text, out parseOut))// Another check for if the value is a double
+                        {
+                            addToVectors(Convert.ToDouble(txtMag3.Text), Convert.ToDouble(txtDeg3.Text), index); // Pass to function to store values in cartesian
+                            SetVals(5); // set total vector
+                        }
+                    }
+                    break;
+                case 4: // force 4
+                    if (double.TryParse(txtMag4.Text, out parseOut))    // Check if the value in the holder is a double
+                    {
+                        if (double.TryParse(txtDeg4.Text, out parseOut))// Another check for if the value is a double
+                        {
+                            addToVectors(Convert.ToDouble(txtMag4.Text), Convert.ToDouble(txtDeg4.Text), index); // Pass to function to store values in cartesian
+                            SetVals(5); // set total vector
+                        }
+                    }
+                    break;
+                case 5: // Net force
+                    for(int i = 0; i < 5; i++)  // for each force
+                    {
+                        if(used[i]) // check if force is being used
+                        {
+                            vectors[0, index] += vectors[0, i]; // add x force value to total
+                            vectors[1, index] += vectors[1, i]; // add y force value to total
+                        }
+                    }
+                    used[index] = true;
+                    lblNet.Text = "Net Force: " + Convert.ToString(Math.Abs(Math.Round(vectors[1, 0])))
+
+                    pnlDrawing.Invalidate();    // Update canvas drawing
+                    break;
+                case 6: // Acceleration
+                    
+                    break;
+                default:    // invalid value passed
+                    break;
+            }
+        }
+
+        private double ConvertDegToRad(double degrees)
+        {
+            return degrees * (Math.PI / 180);
+        }
+
+        private double GetMag(int index)
+        {
+            return Math.Round(Math.Sqrt(vectors[0,index] + vectors[1,index]));
         }
     }
 }
