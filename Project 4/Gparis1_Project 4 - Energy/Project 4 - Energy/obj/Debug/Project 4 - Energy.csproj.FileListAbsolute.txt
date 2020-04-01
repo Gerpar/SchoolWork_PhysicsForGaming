@@ -1,0 +1,29 @@
+C:\Users\smacnaughton\Documents\Game Development\1233 Projects\C# Projects\Project 4 - Energy\Project 4 - Energy\bin\Debug\Project 4 - Energy.exe.config
+C:\Users\smacnaughton\Documents\Game Development\1233 Projects\C# Projects\Project 4 - Energy\Project 4 - Energy\bin\Debug\Project 4 - Energy.exe
+C:\Users\smacnaughton\Documents\Game Development\1233 Projects\C# Projects\Project 4 - Energy\Project 4 - Energy\bin\Debug\Project 4 - Energy.pdb
+C:\Users\smacnaughton\Documents\Game Development\1233 Projects\C# Projects\Project 4 - Energy\Project 4 - Energy\obj\Debug\Project 4 - Energy.csprojResolveAssemblyReference.cache
+C:\Users\smacnaughton\Documents\Game Development\1233 Projects\C# Projects\Project 4 - Energy\Project 4 - Energy\obj\Debug\Project_4___Energy.Form1.resources
+C:\Users\smacnaughton\Documents\Game Development\1233 Projects\C# Projects\Project 4 - Energy\Project 4 - Energy\obj\Debug\Project_4___Energy.Properties.Resources.resources
+C:\Users\smacnaughton\Documents\Game Development\1233 Projects\C# Projects\Project 4 - Energy\Project 4 - Energy\obj\Debug\Project 4 - Energy.csproj.GenerateResource.Cache
+C:\Users\smacnaughton\Documents\Game Development\1233 Projects\C# Projects\Project 4 - Energy\Project 4 - Energy\obj\Debug\Project 4 - Energy.exe
+C:\Users\smacnaughton\Documents\Game Development\1233 Projects\C# Projects\Project 4 - Energy\Project 4 - Energy\obj\Debug\Project 4 - Energy.pdb
+C:\Users\smacnaughton\Documents\Game Development\1233 Projects\C# Projects\Skeleton\Project 4\Project 4 Posting\Project 4 - Energy\Project 4 - Energy\bin\Debug\Project 4 - Energy.exe.config
+C:\Users\smacnaughton\Documents\Game Development\1233 Projects\C# Projects\Skeleton\Project 4\Project 4 Posting\Project 4 - Energy\Project 4 - Energy\bin\Debug\Project 4 - Energy.exe
+C:\Users\smacnaughton\Documents\Game Development\1233 Projects\C# Projects\Skeleton\Project 4\Project 4 Posting\Project 4 - Energy\Project 4 - Energy\bin\Debug\Project 4 - Energy.pdb
+C:\Users\smacnaughton\Documents\Game Development\1233 Projects\C# Projects\Skeleton\Project 4\Project 4 Posting\Project 4 - Energy\Project 4 - Energy\obj\Debug\Project 4 - Energy.csprojResolveAssemblyReference.cache
+C:\Users\smacnaughton\Documents\Game Development\1233 Projects\C# Projects\Skeleton\Project 4\Project 4 Posting\Project 4 - Energy\Project 4 - Energy\obj\Debug\Project_4___Energy.Form1.resources
+C:\Users\smacnaughton\Documents\Game Development\1233 Projects\C# Projects\Skeleton\Project 4\Project 4 Posting\Project 4 - Energy\Project 4 - Energy\obj\Debug\Project_4___Energy.Properties.Resources.resources
+C:\Users\smacnaughton\Documents\Game Development\1233 Projects\C# Projects\Skeleton\Project 4\Project 4 Posting\Project 4 - Energy\Project 4 - Energy\obj\Debug\Project 4 - Energy.csproj.GenerateResource.Cache
+C:\Users\smacnaughton\Documents\Game Development\1233 Projects\C# Projects\Skeleton\Project 4\Project 4 Posting\Project 4 - Energy\Project 4 - Energy\obj\Debug\Project 4 - Energy.csproj.CoreCompileInputs.cache
+C:\Users\smacnaughton\Documents\Game Development\1233 Projects\C# Projects\Skeleton\Project 4\Project 4 Posting\Project 4 - Energy\Project 4 - Energy\obj\Debug\Project 4 - Energy.exe
+C:\Users\smacnaughton\Documents\Game Development\1233 Projects\C# Projects\Skeleton\Project 4\Project 4 Posting\Project 4 - Energy\Project 4 - Energy\obj\Debug\Project 4 - Energy.pdb
+C:\Users\gerpa\Documents\GitHub\SchoolWork_PhysicsForGaming\Project 4\Gparis1_Project 4 - Energy\Project 4 - Energy\obj\Debug\Project 4 - Energy.csprojAssemblyReference.cache
+C:\Users\gerpa\Documents\GitHub\SchoolWork_PhysicsForGaming\Project 4\Gparis1_Project 4 - Energy\Project 4 - Energy\obj\Debug\Project 4 - Energy.exe
+C:\Users\gerpa\Documents\GitHub\SchoolWork_PhysicsForGaming\Project 4\Gparis1_Project 4 - Energy\Project 4 - Energy\obj\Debug\Project 4 - Energy.pdb
+C:\Users\gerpa\Documents\GitHub\SchoolWork_PhysicsForGaming\Project 4\Gparis1_Project 4 - Energy\Project 4 - Energy\bin\Debug\Project 4 - Energy.exe.config
+C:\Users\gerpa\Documents\GitHub\SchoolWork_PhysicsForGaming\Project 4\Gparis1_Project 4 - Energy\Project 4 - Energy\bin\Debug\Project 4 - Energy.exe
+C:\Users\gerpa\Documents\GitHub\SchoolWork_PhysicsForGaming\Project 4\Gparis1_Project 4 - Energy\Project 4 - Energy\bin\Debug\Project 4 - Energy.pdb
+C:\Users\gerpa\Documents\GitHub\SchoolWork_PhysicsForGaming\Project 4\Gparis1_Project 4 - Energy\Project 4 - Energy\obj\Debug\Project_4___Energy.Form1.resources
+C:\Users\gerpa\Documents\GitHub\SchoolWork_PhysicsForGaming\Project 4\Gparis1_Project 4 - Energy\Project 4 - Energy\obj\Debug\Project_4___Energy.Properties.Resources.resources
+C:\Users\gerpa\Documents\GitHub\SchoolWork_PhysicsForGaming\Project 4\Gparis1_Project 4 - Energy\Project 4 - Energy\obj\Debug\Project 4 - Energy.csproj.GenerateResource.cache
+C:\Users\gerpa\Documents\GitHub\SchoolWork_PhysicsForGaming\Project 4\Gparis1_Project 4 - Energy\Project 4 - Energy\obj\Debug\Project 4 - Energy.csproj.CoreCompileInputs.cache
